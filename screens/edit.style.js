@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff', 
         padding: 20, 
     },
+    imageContainer: {
+        backgroundColor: '#fff', 
+    },
     backButton: {
         marginTop: 15,
     },
@@ -13,7 +16,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 40, 
-        marginTop: 100,
+        marginTop: 50,
         marginLeft: 15,
     },
     inputGroup: {
@@ -27,7 +30,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 5,
-        marginTop: 175,
         marginLeft: 15,
         marginRight: 15,
         shadowColor: '#000',
@@ -44,8 +46,8 @@ const styles = StyleSheet.create({
     },
     image: {
         alignSelf: 'center',
-        width: 250,
-        height: 250,
+        width: '90%',
+        height: '66%',
         borderWidth: 1,
         borderColor: '#4169E1',
     },

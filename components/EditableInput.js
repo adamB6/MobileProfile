@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginLeft: 15,
         marginRight: 15,
+        marginBottom: 150,
     },
     label: {
         fontSize: 16,
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
         borderColor: '#ccc',
         borderRadius: 5,
         marginLeft: 15,
+        marginBottom: 150,
         flex: 1,
     }
 });
