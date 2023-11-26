@@ -33,7 +33,6 @@ For using simulators:
 ## Contributing
 
 Contributions to enhance the Mobile Profile component are welcomed. Feel free to fork the repository, make improvements, and submit pull requests. For major changes or feature additions, please open an issue first to discuss what you would like to change.
-License
 
 Contact
 
