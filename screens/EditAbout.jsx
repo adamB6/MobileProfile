@@ -29,7 +29,7 @@ const EditAbout = () => {
       <Text style={styles.headerText}>Tell us about yourself</Text>
 
       {/* Editable Input for About */}
-      <View>
+      <View style={styles.inputGroup}>
         <EditableInput
           label="About"
           value={about}
