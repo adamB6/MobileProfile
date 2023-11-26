@@ -16,10 +16,9 @@ Before getting started, ensure that Node.js is installed on your system. You can
    ```bash
    git clone https://github.com/adamB6/MobileProfile.git
 2. Open the project in VSCode or your preferred IDE.
-3. Run The following command to install Expo, which facilitates cross-platform development:
-   a) npm install expo
-4. Once the installation is complete, you can start the projectL:
-   a) npm start
+3. Run The following command to install Expo, which facilitates cross-platform development: **npm install expo
+4. Once the installation is complete, you can start the projectL: **npm start
+   
 ## Usage
 
 After running npm start, a QR code will be displayed in your terminal. You can scan this QR code using your mobile device to test the project directly on your phone.
