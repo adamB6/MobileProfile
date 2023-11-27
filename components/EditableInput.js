@@ -73,7 +73,6 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginLeft: 15,
         marginBottom: 150,
-        flex: 1,
     }
 });
 
