@@ -42,11 +42,11 @@ const EditPhone = () => {
       alert('Please enter a valid phone number in the format (XXX) XXX-XXXX');
     }
   };
-  
+
 
   return (
     <SafeAreaView style={styles.container}>
-  
+
       {/* Back button for navigation */}
       <View style={styles.backButton}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -57,7 +57,7 @@ const EditPhone = () => {
       <Text style={styles.headerText}>What's your phone number?</Text>
 
       {/* Editable input for phone number */}
-      <View>
+      <View style={styles.inputGroup}>
         <EditableInput
           label="Phone Number"
           value={phoneNumber}
@@ -71,7 +71,7 @@ const EditPhone = () => {
       <TouchableOpacity style={styles.button} onPress={handleUpdatePress}>
         <Text style={styles.buttonText}>Update</Text>
       </TouchableOpacity>
-      
+
     </SafeAreaView>
   );
 };

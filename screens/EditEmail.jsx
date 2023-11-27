@@ -35,7 +35,7 @@ const EditEmail = () => {
       <Text style={styles.headerText}>What's your email?</Text>
 
       {/* Editable input for email */}
-      <View>
+      <View style={styles.inputGroup}>
         <EditableInput
           label="Email"
           value={email}
