@@ -22,9 +22,8 @@ const EditableInput = ({
     return (
         // View container, style changes based on the 'left' prop...not a great solution
         <View style={left ? styles.leftContainer : styles.container}>
-            {/* Text component for the label, shown only if multiline is false. This is to handle differences
-            between About input vs. others */} 
-            <Text style={styles.label}>{!multiline ? label : ''}</Text>
+            {/* Text component for the label, shown only if multiline is false */}
+            {!multiline && <Text style={styles.label}>{label}</Text>}
             <TextInput
                 style={multiline ? styles.inputMultiline : styles.input}
                 onChangeText={handleChangeText}
@@ -35,6 +34,7 @@ const EditableInput = ({
                 left={left}
             />
         </View>
+
     );
 };
 
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         height: 150,
         textAlignVertical: 'top',
+        height: 250, 
     },
     leftContainer: {
         marginBottom: 15,

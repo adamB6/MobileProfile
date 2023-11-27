@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
-import styles from './edit.style'; 
+import styles from './edit.style';
 import { ProfileContext } from '../contexts/ProfileContext';
 import { useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons';
@@ -36,7 +36,7 @@ const EditAbout = () => {
           onChangeText={setAbout}
           placeholder="Share something about yourself"
           multiline={true}
-          maxlength={200}
+          maxLength={500}
         />
       </View>
 
