@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     },
     backButton: {
         marginTop: 15,
+        marginLeft: 15,
     },
     headerText: {
         fontSize: 24,

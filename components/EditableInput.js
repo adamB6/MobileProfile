@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
         borderColor: '#ccc',
         borderRadius: 5,
         marginLeft: 15,
-        marginBottom: 150,
         flex: 1,
     }
 });
