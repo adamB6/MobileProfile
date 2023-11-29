@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
-import styles from './edit.style';
+import { styles } from './style';
 import { ProfileContext } from '../contexts/ProfileContext';
 import { useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons';
@@ -54,7 +54,7 @@ const EditPhone = () => {
         </TouchableOpacity>
       </View>
 
-      <Text style={styles.headerText}>What's your phone number?</Text>
+      <Text style={styles.headerTextBlack}>What's your phone number?</Text>
 
       {/* Editable input for phone number */}
       <View style={styles.inputGroup}>
@@ -68,8 +68,8 @@ const EditPhone = () => {
       </View>
 
       {/* Button for submitting the updated phone number */}
-      <TouchableOpacity style={styles.button} onPress={handleUpdatePress}>
-        <Text style={styles.buttonText}>Update</Text>
+      <TouchableOpacity style={styles.updateButton} onPress={handleUpdatePress}>
+        <Text style={styles.updateButtonText}>Update</Text>
       </TouchableOpacity>
 
     </SafeAreaView>

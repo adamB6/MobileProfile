@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { View, ScrollView, SafeAreaView, TouchableOpacity, Image, Text } from 'react-native';
 import { COLORS, SIZES } from '../constants';
-import { styles } from './editprofile.style';
+import { styles } from './style';
 import { useNavigation } from '@react-navigation/native';
 import { ProfileContext } from '../contexts/ProfileContext';
 import { AntDesign } from '@expo/vector-icons';
@@ -15,7 +15,7 @@ const EditProfile = () => {
   return (
     // Safe area wrapper to avoid overlap with system UI
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
-      <Text style={styles.headerText}>Edit Profile</Text>
+      <Text style={styles.headerTextBlue}>Edit Profile</Text>
       <ScrollView showsVerticalScrollIndicator={false}>
       
         {/* Touchable area for profile image, navigates to image edit screen */}

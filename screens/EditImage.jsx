@@ -4,7 +4,7 @@ import { ProfileContext } from '../contexts/ProfileContext';
 import { useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
-import styles from './edit.style'
+import { styles } from './style'
 
 const EditImage = () => {
     // Accessing and updating profile context, initializing state with current image
@@ -60,20 +60,20 @@ const EditImage = () => {
                 </TouchableOpacity>
             </View>
 
-            <Text style={styles.headerText}>Upload a photo of yourself:</Text>
+            <Text style={styles.headerTextBlack}>Upload a photo of yourself:</Text>
 
             {/* Touchable area for selecting an image */}
             <TouchableOpacity onPress={handleChooseImage} style={styles.imageContainer}>
                 {typeof image === 'string' ? (
-                    <Image source={{ uri: image }} style={styles.image} onError={(e) => console.log('Image load error:', e)} />
+                    <Image source={{ uri: image }} style={styles.imageUpdate} onError={(e) => console.log('Image load error:', e)} />
                 ) : (
-                    <Image source={require('../assets/avatar.png')} style={styles.image} onError={(e) => console.log('Image load error:', e)} />
+                    <Image source={require('../assets/avatar.png')} style={styles.imageUpdate} onError={(e) => console.log('Image load error:', e)} />
                 )}
             </TouchableOpacity>
 
             {/* Update button */}
-            <TouchableOpacity style={styles.button} onPress={handleUpdatePress}>
-                <Text style={styles.buttonText}>Update</Text>
+            <TouchableOpacity style={styles.updateButton} onPress={handleUpdatePress}>
+                <Text style={styles.updateButtonText}>Update</Text>
             </TouchableOpacity>
         </SafeAreaView>
     );

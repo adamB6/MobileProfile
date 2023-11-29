@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
-import styles from './edit.style'; 
+import { styles } from './style'; 
 import { ProfileContext } from '../contexts/ProfileContext';
 import { useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons';
@@ -32,7 +32,7 @@ const EditEmail = () => {
         </TouchableOpacity>
       </View>
 
-      <Text style={styles.headerText}>What's your email?</Text>
+      <Text style={styles.headerTextBlack}>What's your email?</Text>
 
       {/* Editable input for email */}
       <View style={styles.inputGroup}>
@@ -46,8 +46,8 @@ const EditEmail = () => {
       </View>
 
       {/* Update Button */}
-      <TouchableOpacity style={styles.button} onPress={handleUpdatePress}>
-        <Text style={styles.buttonText}>Update</Text>
+      <TouchableOpacity style={styles.updateButton} onPress={handleUpdatePress}>
+        <Text style={styles.updateButtonText}>Update</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
